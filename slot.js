@@ -60,7 +60,7 @@ let arrResults = [
 {"col1":8, "col2":2, "result":"<P>Cooming soon..." }, 
 {"col1":8, "col2":3, "result":"<P>Cooming soon..." }, 
 {"col1":8, "col2":4, "result":"<P>Cooming soon..." }, 
-{"col1":8, "col2":5, "result":"<P>Cooming soon..." },
+{"col1":8, "col2":5, "result":"<P>Geomagnetic storms affecting people's well-being and electronics, periods of drought or cold in agriculture, etc ... If we do not want to miss the next ice age or blackout in energy, the Sun must be closely monitored. This is helped in particular by satellites such as <A HREF='https:\/\/www.nasa.gov\/mission_pages\/stereo\/main\/index.html' TARGET='_blank'>Stereo</A>. So astrophysics is combined with meteorology" },
 {"col1":8, "col2":6, "result":"<P>Cooming soon..." },
 {"col1":8, "col2":7, "result":"<P>Cooming soon..." },
 // meteo
