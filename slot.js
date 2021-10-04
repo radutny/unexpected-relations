@@ -233,6 +233,10 @@ function setLang(localLang) {
         for (i=1; i< arrCol1Eng.length; i++) {
 	   document.getElementById("tab1").rows[i].cells.item(0).innerHTML='<DIV CLASS="top-right">'+arrCol1Eng[i]+'</DIV>';
         };
+	document.getElementById("tab2").rows[0].innerHTML="<TD>What can give<BR>NASA</TD>";
+        for (i=1; i< arrCol1Eng.length; i++) {
+	   document.getElementById("tab2").rows[i].cells.item(0).innerHTML='<DIV CLASS="top-right">'+arrCol2Eng[i]+'</DIV>';
+        };
 
   };
   if (stLang=='ukr') {
@@ -244,13 +248,9 @@ function setLang(localLang) {
         };
 
 	document.getElementById("tab2").rows[0].cells.item(0).innerHTML="Що може дати<BR>NASA";
-	document.getElementById("tab2").rows[1].cells.item(0).innerHTML="<DIV CLASS='top-right'>Орбіта</DIV>";
-	document.getElementById("tab2").rows[2].cells.item(0).innerHTML="<DIV CLASS='top-right'>Вакуум</DIV>";
-	document.getElementById("tab2").rows[3].cells.item(0).innerHTML="<DIV CLASS='top-right'>Космічна<BR>радіація</DIV>";
-	document.getElementById("tab2").rows[4].cells.item(0).innerHTML="<DIV CLASS='top-right'>Мікро-<BR>гравітація</DIV>";
-	document.getElementById("tab2").rows[5].cells.item(0).innerHTML="<DIV CLASS='top-right'>Глибокий<BR>холод</DIV>";
-	document.getElementById("tab2").rows[6].cells.item(0).innerHTML="<DIV CLASS='top-right'><BR><BR>Тривала ізоляція</DIV>";
-	document.getElementById("tab2").rows[7].cells.item(0).innerHTML="<DIV CLASS='top-right'>Висока<BR>швидкість</DIV>";
+        for (i=1; i< arrCol1Eng.length; i++) {
+	   document.getElementById("tab2").rows[i].cells.item(0).innerHTML='<DIV CLASS="top-right">'+arrCol2Ukr[i]+'</DIV>';
+        };
 
 	document.getElementById("tab3").rows[0].cells.item(0).innerHTML="Що можна<BR>отримати";
 	document.getElementById("tab3").rows[1].cells.item(0).innerHTML="Орбітальна астрономія";
