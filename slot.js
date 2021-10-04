@@ -192,6 +192,13 @@ let arrCol1Eng = [ '', '<DIV CLASS="top-right">Astronomy</DIV>'        	, '<DIV 
 		   '<DIV CLASS="top-right">Particle<BR>physic</DIV>'  	, '<DIV CLASS="top-right">Geophysic</DIV>'		, '<DIV CLASS="top-right">Meteo-<BR>rology</DIV>',
 		   '<DIV CLASS="top-right">Food<BR>production</DIV>'	, '<DIV CLASS="top-right">Culture</DIV>' ];
 
+let arrCol2Ukr = [ '',  '<DIV CLASS="top-right">Орбіта</DIV>'       	   , '<DIV CLASS="top-right">Вакуум</DIV>'		, '<DIV CLASS="top-right">Невагомість</DIV>',
+	           	'<DIV CLASS="top-right">Космічна<BR>радіація</DIV>', '<DIV CLASS="top-right">Мікро-<BR>гравітація</DIV>', '<DIV CLASS="top-right">Глибокий<BR>холод/DIV>',
+		   	'<DIV CLASS="top-right">Тривала<BR>ізоляція</DIV>' , '<DIV CLASS="top-right">Висока<BR>швидкість</DIV>' ];
+
+let arrCol2Eng = [ '',  '<DIV CLASS="top-right">Орбіта</DIV>'       	   , '<DIV CLASS="top-right">Вакуум</DIV>'		, '<DIV CLASS="top-right">Невагомість</DIV>',
+	           	'<DIV CLASS="top-right">Космічна<BR>радіація</DIV>', '<DIV CLASS="top-right">Мікро-<BR>гравітація</DIV>', '<DIV CLASS="top-right">Глибокий<BR>холод/DIV>',
+		   	'<DIV CLASS="top-right">Тривала<BR>ізоляція</DIV>' , '<DIV CLASS="top-right">Висока<BR>швидкість</DIV>' ];
 
 //-- global variables
 var
