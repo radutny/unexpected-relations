@@ -83,6 +83,12 @@ body {
 	position: block;
 	top: 0px;
 }
+#lang {
+	align: right;
+	top: 0px;
+	margin-left: auto;
+	margin-right: 0px;
+}
 .slot1 {
 	width:186px; 
 	height:100px;
@@ -92,7 +98,6 @@ body {
 	overflow: hidden;
 }
 .slot2 {
-	#background:url("images/reel2.png") repeat-y; /* slot2 */
 	width:186px; 
 	height:100px;
 	float:left;
@@ -102,7 +107,6 @@ body {
 	top: -100px;
 }
 .slot3 {
-	#background:url("images/reel3.png") repeat-y; /* slot3 */
 	width:186px; 
 	height:100px;
 	float:left;
@@ -123,18 +127,22 @@ button {
 #resultContainer {
 	height:282px;
         border: 1px solid #000000;
+	margin:6px 0px 0px 0px;
 }
 p { 
 	margin-top: 1px; 
 	text-align: justify;
 	text-indent: 1.2em;
 };
-#result {
-	margin:2px 1px 2px 20px;
+.result {
+	margin:12px 10px 21px 20px;
 	font-size:16px;
 	text-indent: 1.2em;
 	text-align: justify;
 	height:212px;
+	scroll: auto;
+	overflow-y: auto;
+	-moz-scrollbars-vertical:auto;
 }
 .credits {
 	font-size:14px;
@@ -147,7 +155,7 @@ p {
 .top-right {
   	text-align: right;
   	position: relative;
-	top: 1-px;
+	top: 1px;
   	right: 12px;
 }
 </style>
@@ -155,7 +163,10 @@ p {
 </head>
 
 <body onload=init()>
-<div class="hd">
+<div ALIGN="right" class="lang">
+  <A HREF="#"><IMG SRC="usa.png" ALT="English"    BORDER=0 onclick=setLang("eng")></A>
+  <!A HREF="#"><!IMG SRC="deu.png" ALT="Deutsch"    BORDER=0 onclick=setLang("deu")><!/A>
+  <A HREF="#"><IMG SRC="ukr.png" ALT="Українська" BORDER=0 onclick=setLang("ukr")></A>
 </div>
 <div class="bd">
 	<h1>Unexpected relations</h1>
@@ -164,8 +175,8 @@ p {
 			<div id="slot1" class="slot1">
 			   <TABLE id="tab1" class="tab" BORDER="1" WIDTH="98%" ALIGN="center">
 			   <TR HEIGHT="93"><TD>What can give <BR>science</TD>
-			   <TR HEIGHT="93"><TD style="background-image:url(astronomy.png)  ; background-repeat:no-repeat;"><DIV CLASS="top-right">Astronomy</TD>
-			   <TR HEIGHT="93"><TD style="background-image:url(material.png)   ; background-repeat:no-repeat;"><DIV CLASS="top-right">Material<BR> science</TD>
+			   <TR HEIGHT="93"><TD style="background-image:url(astronomy.png)  ; background-repeat:no-repeat;"><DIV CLASS="top-right">Astronomy</DIV</TD>
+			   <TR HEIGHT="93"><TD style="background-image:url(material.png)   ; background-repeat:no-repeat;"><DIV CLASS="top-right">Material<BR> science</DIV></TD>
 			   <TR HEIGHT="93"><TD style="background-image:url(botany.png)     ; background-repeat:no-repeat;"><DIV CLASS="top-right">Botany</TD>
 			   <TR HEIGHT="93"><TD style="background-image:url(biology.png)    ; background-repeat:no-repeat;"><DIV CLASS="top-right">Micro-<BR>biology</TD>
 			   <TR HEIGHT="93"><TD style="background-image:url(virusology.png) ; background-repeat:no-repeat;"><DIV CLASS="top-right">Viruso-<BR>logy</TD>
@@ -192,9 +203,9 @@ p {
 			<div id="slot3" class="slot3">
 			   <TABLE id="tab3" BORDER="1" WIDTH="98%" ALIGN="center">
 			   <TR HEIGHT="93"><TD>What can we <BR>get</TD>
-			   <TR HEIGHT="93"><TD>Orbital astronomy</TD>     		    <! 1 astronomy - orbit >
+			   <TR HEIGHT="93"><TD>Orbital astronomy</TD>     		 <! 1 astronomy - orbit >
 			   <TR HEIGHT="93"><TD>Increase resolution, see unvisible</TD>   <! 2 astronomy - vacuum >
-			   <TR HEIGHT="93"><TD>See hamma-rays</TD> 			    <! 3 astronomy - radiation >
+			   <TR HEIGHT="93"><TD>See hamma-rays</TD> 			 <! 3 astronomy - radiation >
 			   <TR HEIGHT="93"><TD>Very large<BR>mirrors and antenns</TD>    <! 4 astronomy - microgravitation>
 			   <TR HEIGHT="93"><TD>Infrared<BR>telescopes</TD>               <! 5 astronomy - cold >
 			   <TR HEIGHT="93"><TD>No deception</TD>                         <! 6 astronomy - isolation >
@@ -274,7 +285,7 @@ p {
 			</div>
 			<div class="clear"></div>
 		</div>
-		<div id="resultContainer"><div id="result"><P>What would happen when you combine the achievements of traditional science and the capabilities of NASA? What could come out of the conjunction, such as biology and weightlessness? Or materials science and the flow of heavy elementary particles? Could space vacuum be used for conservation of living tissues or cultural artefacts? What is the connection between long-term isolation and food production?<P>This page will help you learn about links you have already found and establish unknown ones. Possibly, you would become a scientist and this page would lead you to an idea of epoch-making experiment.<P>Turn the wheels and win a brilliant idea!</div></div><BR>
+		<div id="resultContainer"><div id="result" class="#result"><P>What would happen when you combine the achievements of traditional science and the capabilities of NASA? What could come out of the conjunction, such as biology and weightlessness? Or materials science and the flow of heavy elementary particles? Could space vacuum be used for conservation of living tissues or cultural artefacts? What is the connection between long-term isolation and food production?<P>This page will help you learn about links you have already found and establish unknown ones. Possibly, you would become a scientist and this page would lead you to an idea of epoch-making experiment.<P>Turn the wheels and win a brilliant idea!</div></div><BR>
 		<div><button id="control" onclick="btnOnClick()">Start</button></div>
 	</div>
 
@@ -284,14 +295,14 @@ p {
 
 <!-- Default Statcounter code for Unexpected Relations
 https://radutny.github.io/unexpected-relations/index.html -->
-<script type="text/javascript">
+<!script type="text/javascript">
 var sc_project=12643415; 
 var sc_invisible=0; 
 var sc_security="97389c72"; 
 var scJsHost = "https://";
 document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
-</script>
+<!/script>
 <noscript><div class="statcounter"><a title="Web Analytics"
 href="https://statcounter.com/" target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/12643415/0/97389c72/0/" alt="Web Analytics"
