@@ -191,7 +191,7 @@ let arrCol1Eng=['','<DIV CLASS="top-right">Astronomy</DIV>'        	, '<DIV CLAS
 		   '<DIV CLASS="top-right">Food<BR>production</DIV>'	, '<DIV CLASS="top-right">Culture</DIV>' ];
 
 let arrCol2Ukr=['','<DIV CLASS="top-right">Орбіта</DIV>'       	      , '<DIV CLASS="top-right">&nbsp;Вакуум</DIV>'	, '<DIV CLASS="top-right">&nbsp;Нева-<BR>гомість</DIV>',
-	           '<DIV CLASS="top-right">Космічна<BR>радіація</DIV>', '<DIV CLASS="top-right">Глибокий<BR>холод/DIV>' , '<DIV CLASS="top-right">Тривала<BR>ізоляція</DIV>', '<DIV CLASS="top-right">Висока<BR>швидкість</DIV>' ];
+	           '<DIV CLASS="top-right">Космічна<BR>радіація</DIV>', '<DIV CLASS="top-right">Глибокий<BR>холод</DIV>' , '<DIV CLASS="top-right">Тривала<BR>ізоляція</DIV>', '<DIV CLASS="top-right">Висока<BR>швидкість</DIV>' ];
 
 let arrCol2Eng=['','<DIV CLASS="top-right">Orbit</DIV>'       	    , '<DIV CLASS="top-right">&nbsp;Vacuum</DIV>'	, '<DIV CLASS="top-right">Micro-<BR>gravitation</DIV>',
 	           '<DIV CLASS="top-right">Space<BR>radiation</DIV>', '<DIV CLASS="top-right">Deep<BR>cold/DIV>',   '<DIV CLASS="top-right">Long<BR>isolation</DIV>' , '<DIV CLASS="top-right">High<BR>speed</DIV>' ];
